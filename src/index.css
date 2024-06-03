@@ -1,0 +1,163 @@
+:root{
+    --black: #161616;
+    --white: #ffffff;
+    --orange: #f78107;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--white);
+    box-sizing: border-box;
+    line-height: 1.5;
+}
+
+p{
+    font-size: min(4vw,18px);
+}
+
+li, li>button{
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+h1>span{
+    font-size: min(7vw,50px);
+}
+
+header button:hover{
+    text-decoration: underline 2px;
+}
+
+.container{
+    width: min(90%,1400px);
+    margin: 0 auto;
+}
+
+header{
+    position: sticky;
+    top: -1px;
+    background-color: var(--black);
+    height: max(70px,8vh);
+    color: var(--white);
+}
+
+header button{
+    color: var(--white);
+    background-color: var(--black);
+    border: 1px solid var(--black);
+}
+
+header>div{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    align-items: center;
+    gap: 15%;
+}
+
+header ul>li>button{
+    padding: 10px;
+    font-weight: 900;
+    font-size: min(3vw,20px);
+}
+
+header ul>li:last-of-type{
+    background-color: var(--orange);
+    border-radius: 15px;
+}
+
+header ul>li:last-of-type>button{
+    background-color: transparent;
+    border: none;
+}
+
+header>div>div:last-of-type>ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    background-color: var(--black);
+    color: var(--white);
+}
+
+main>div>div{
+    min-height: 100vh;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 30px;
+}
+
+main>div>div>div{
+    width: min(100%,685px);
+}
+
+main>div>div>div:first-of-type>h1{
+    margin-top: -180px;
+}
+
+main>div>div>div:first-of-type>button{
+    width: max(10vw,150px);
+    padding: 20px;
+    font-size: min(20px);
+    font-weight: 900;
+    border-radius: 45px;
+    background-color: var(--black);
+    color: var(--white);
+    border: solid var(--white) 2px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+main>div>div>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+section{
+    background-color: var(--white);
+    /* height: 50vh; */
+}
+
+section>div>div:first-of-type{
+    background: url(./kitchen.avif) ;
+    background-size: cover;
+    height: min(700px,100vh);
+    backdrop-filter: brightness(4px);
+    width: min(1300px,100%);
+    position: relative;
+}
+
+section>div>div:first-of-type>div{
+    width: min(80%,600px);
+    padding: calc(1.5vw + 1.5vh);
+    background-color: rgba(255, 255, 255, 0.85);
+    position: absolute;
+    right: 1px;
+    bottom: 10%;
+}
+
+@media screen and (max-width: 687px) {
+    main>div>div>div{
+        padding-top: 30px;
+    }
+
+    main>div>div>div:first-of-type>button{
+        align-self: center;
+    }
+
+    main>div>div>div:first-of-type>h1{
+        text-align: center;
+        margin-top: 0;
+    }
+
+    main>div>div>div:last-of-type{
+        padding-bottom: 30px;
+    }
+}
