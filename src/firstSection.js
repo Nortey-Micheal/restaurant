@@ -1,4 +1,5 @@
 import Food1 from "./images/food1.jpeg";
+import Menu from "./menu.js"
 
 function firstSection() {
     const firstCont = document.createElement("div");
@@ -21,6 +22,8 @@ function firstSection() {
 
     firstCont.appendChild(top);
     firstCont.appendChild(botttom);
+
+    btn.addEventListener("click",Menu)
 
     return firstCont;
 }

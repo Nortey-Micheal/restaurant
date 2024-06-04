@@ -67,7 +67,7 @@ header>div{
 header ul>li>button{
     padding: 10px;
     font-weight: 900;
-    font-size: min(3vw,20px);
+    font-size: min(3.5vw,23px);
 }
 
 header ul>li:last-of-type{
@@ -152,10 +152,6 @@ section>div>div:first-of-type>div{
     padding-bottom: 10vh;
 }
 
-.menuList>div>div{
-    margin-top: 50px;
-}
-
 .menuList h2{
     text-align: center;
     font-size: min(7vw,50px);
@@ -164,6 +160,7 @@ section>div>div:first-of-type>div{
 }
 
 .menuList h3{
+    margin-top: 50px;
     text-align: center;
     text-decoration: underline 2px;
     font-size: min(4vw,25px);
@@ -173,6 +170,26 @@ section>div>div:first-of-type>div{
     margin-top: 20px;
     width: 100%;
     border-radius: 30px;
+}
+
+.menuList>div>div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 30px;
+
+}
+
+.order{
+    width: 90%;
+    padding: 7px;
+    margin: 0 auto;
+    font-weight: 900;
+    font-size: min(3vw,25px);
+    border-radius: 5px;
+    color: var(--white);
+    border: var(--orange) solid 1px;
+    background-color: var(--orange);
 }
 
 @media screen and (max-width: 980px) {
