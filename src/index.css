@@ -207,7 +207,7 @@ section>div>div:first-of-type>div{
     padding: 7px;
     margin: 0 auto;
     font-weight: 900;
-    font-size: min(3vw,25px);
+    font-size: min(4.5vw,25px);
     border-radius: 5px;
     color: var(--white);
     border: var(--orange) solid 1px;
