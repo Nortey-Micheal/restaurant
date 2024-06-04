@@ -152,6 +152,10 @@ section>div>div:first-of-type>div{
     padding-bottom: 10vh;
 }
 
+.menuList>div>div{
+    margin-top: 50px;
+}
+
 .menuList h2{
     text-align: center;
     font-size: min(7vw,50px);
@@ -172,6 +176,8 @@ section>div>div:first-of-type>div{
 }
 
 @media screen and (max-width: 980px) {
+    
+
     .firstCont{
         display: flex;
         flex-direction: column;
