@@ -180,6 +180,13 @@ section>div>div:first-of-type>div{
 
 }
 
+.menuList>div>div>p{
+    width: 90%;
+    margin: 0 auto;
+    height: 100px;
+    overflow: auto;
+}
+
 .order{
     width: 90%;
     padding: 7px;
