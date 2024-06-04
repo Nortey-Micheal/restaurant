@@ -149,6 +149,7 @@ section>div>div:first-of-type>div{
     column-gap: 20px;
     justify-content: center;
     grid-template-columns: repeat(auto-fit,min(100%,630px));
+    padding-bottom: 10vh;
 }
 
 .menuList h2{
