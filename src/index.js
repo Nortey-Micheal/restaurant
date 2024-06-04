@@ -1,12 +1,12 @@
 import "./index.css";
-import Food1 from "./food1.jpeg"
-import firstSection from "./firstSection";
-import secSection from "./secSection";
+import Menu from "./menu.js";
+import homePage from "./homePage.js"
 
 (function addToDocument(){
-    const mainCont = document.querySelector("main>div");
-    const sectionCont = document.querySelector("section>div");
+    const menuBtn = document.querySelector(".menu");
+    const homeBtn = document.querySelector(".home");
 
-    mainCont.appendChild(firstSection());
-    sectionCont.appendChild(secSection());
+    window.addEventListener("load",homePage);
+    homeBtn.addEventListener("click",homePage);
+    menuBtn.addEventListener("click",Menu);
 })()

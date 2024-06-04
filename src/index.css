@@ -15,6 +15,10 @@ body{
     line-height: 1.5;
 }
 
+button{
+    cursor: pointer;
+}
+
 p{
     font-size: min(4vw,18px);
 }
@@ -22,7 +26,6 @@ p{
 li, li>button{
     text-decoration: none;
     list-style: none;
-    
 }
 
 h1>span{
@@ -44,6 +47,7 @@ header{
     background-color: var(--black);
     height: max(70px,8vh);
     color: var(--white);
+    z-index: 2;
 }
 
 header button{
@@ -86,22 +90,20 @@ main{
     color: var(--white);
 }
 
-main>div>div{
+.firstCont{
     min-height: 100vh;
-    display: flex;
-    flex-flow: row wrap;
-    gap: 30px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(auto-fit,minmax(45%,1fr));
+    gap: 40px;
 }
 
-main>div>div>div{
-    width: min(100%,685px);
-}
 
-main>div>div>div:first-of-type>h1{
+.firstCont>div:first-of-type>h1{
     margin-top: -180px;
 }
 
-main>div>div>div:first-of-type>button{
+.firstCont>div:first-of-type>button{
     width: max(10vw,150px);
     padding: 20px;
     font-size: min(20px);
@@ -114,7 +116,7 @@ main>div>div>div:first-of-type>button{
     cursor: pointer;
 }
 
-main>div>div>div{
+.firstCont>div{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -122,14 +124,13 @@ main>div>div>div{
 
 section{
     background-color: var(--white);
-    /* height: 50vh; */
+    margin-bottom: 10vh;
 }
 
 section>div>div:first-of-type{
-    background: url(./kitchen.avif) ;
+    background: url(./images/kitchen.avif) ;
     background-size: cover;
     height: min(700px,100vh);
-    backdrop-filter: brightness(4px);
     width: min(1300px,100%);
     position: relative;
 }
@@ -137,27 +138,64 @@ section>div>div:first-of-type{
 section>div>div:first-of-type>div{
     width: min(80%,600px);
     padding: calc(1.5vw + 1.5vh);
-    background-color: rgba(255, 255, 255, 0.85);
+    background-color: rgba(255, 255, 255, 0.95);
     position: absolute;
     right: 1px;
     bottom: 10%;
 }
 
-@media screen and (max-width: 687px) {
-    main>div>div>div{
+.menuList>div{
+    display: grid;
+    column-gap: 20px;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit,min(100%,630px));
+}
+
+.menuList h2{
+    text-align: center;
+    font-size: min(7vw,50px);
+    text-decoration: double underline 3px;
+    padding: 30px 0;
+}
+
+.menuList h3{
+    text-align: center;
+    text-decoration: underline 2px;
+    font-size: min(4vw,25px);
+}
+
+.menuList img{
+    margin-top: 20px;
+    width: 100%;
+    border-radius: 30px;
+}
+
+@media screen and (max-width: 980px) {
+    .firstCont{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .firstCont img{
+        width: 70%;
+        
+    }
+
+    .firstCont>div{
         padding-top: 30px;
     }
 
-    main>div>div>div:first-of-type>button{
+    .firstCont>div:first-of-type>button{
         align-self: center;
     }
 
-    main>div>div>div:first-of-type>h1{
+    .firstCont>div:first-of-type>h1{
         text-align: center;
         margin-top: 0;
     }
 
-    main>div>div>div:last-of-type{
+    .firstCont>div:last-of-type{
         padding-bottom: 30px;
+        align-items: center;
     }
 }

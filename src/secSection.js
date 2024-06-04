@@ -16,14 +16,9 @@ function secSection(){
       With impeccable service and a carefully curated wine list, Ratatouille promises a delightful dining experience for food enthusiasts and casual diners alike.`;
     firstPart.appendChild(firstPartPara);
 
-    const secondPart = document.createElement("div");
-    const secondPartH2 = document.createElement("h2");
-    
-
     secCont.appendChild(firstPart);
-    secCont.appendChild(secondPart)
 
     return secCont;
 }
 
-export default secSection
+export default secSection;

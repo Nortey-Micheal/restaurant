@@ -10,7 +10,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: "RATATOUILLE",
+            title: "LA RATATOUILLE",
             template: "./src/index.html",
         })
     ],
@@ -21,7 +21,7 @@ module.exports = {
                 use: ["style-loader","css-loader"],
             },
             {
-                test: /\.(png|jpg|jpeg|svg|gif|avif)$/i,
+                test: /\.(png|jpg|jpeg|svg|gif|avif|webp)$/i,
                 type: "asset/resource",
             },
             {

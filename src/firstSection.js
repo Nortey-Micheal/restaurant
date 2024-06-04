@@ -1,5 +1,8 @@
+import Food1 from "./images/food1.jpeg";
+
 function firstSection() {
     const firstCont = document.createElement("div");
+    firstCont.classList.add("firstCont")
     const top = document.createElement("div");
     const botttom = document.createElement("div");
     const h1 = document.createElement("h1");
@@ -22,4 +25,4 @@ function firstSection() {
     return firstCont;
 }
 
-export default firstSection
+export default firstSection;
