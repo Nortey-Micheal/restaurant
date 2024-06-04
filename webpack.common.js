@@ -26,7 +26,7 @@ module.exports = {
             },
             {
                 test: /\.(ttf|twoff)$/i,
-                type: "assest/resource",
+                type: "asset/resource",
             }
         ]
     },

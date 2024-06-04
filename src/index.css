@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Fell";
+    src: url(./fonts/IMFellFrenchCanon-Regular.ttf);
+}
+
+@font-face {
+    font-family: "Kalam";
+    src: url(./fonts/Kalam-Regular.ttf);
+}
+
 :root{
     --black: #161616;
     --white: #ffffff;
@@ -13,14 +23,16 @@ body{
     background-color: var(--white);
     box-sizing: border-box;
     line-height: 1.5;
+    font-family: Kalam;
 }
 
 button{
     cursor: pointer;
+    font-family: Kalam;
 }
 
 p{
-    font-size: min(4vw,18px);
+    font-size: min(4.5vw,23px);
 }
 
 li, li>button{
@@ -30,6 +42,7 @@ li, li>button{
 
 h1>span{
     font-size: min(7vw,50px);
+    font-family: Fell;
 }
 
 header button:hover{
@@ -153,6 +166,7 @@ section>div>div:first-of-type>div{
 }
 
 .menuList h2{
+    font-family: Fell;
     text-align: center;
     font-size: min(7vw,50px);
     text-decoration: double underline 3px;
@@ -160,10 +174,11 @@ section>div>div:first-of-type>div{
 }
 
 .menuList h3{
+    font-family: Fell;
     margin-top: 50px;
     text-align: center;
     text-decoration: underline 2px;
-    font-size: min(4vw,25px);
+    font-size: min(6vw,30px);
 }
 
 .menuList img{
