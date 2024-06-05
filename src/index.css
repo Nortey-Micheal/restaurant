@@ -196,14 +196,14 @@ section>div>div:first-of-type>div{
 }
 
 .menuList>div>div>p{
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     height: 100px;
     overflow: auto;
 }
 
 .order{
-    width: 90%;
+    width: 100%;
     padding: 7px;
     margin: 0 auto;
     font-weight: 900;
